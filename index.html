@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK-PAPER-SCISSORS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="playerScore">
+        <h2 class="cap-fade-up-fast">RPS</h2>
+        <h4 class="cursive-text">Scores</h4>
+        <div id="player1Score" class="player-score">Computer: 0</div>
+        <div id="player2Score" class="player-score">Player: 0</div>
+    </div>
+    <div class="margin">
+        <h2 id="results"></h2>
+    </div>
+    <div class="game">
+        <div class="playBoard">
+            <div class="aichoice board" id="aichoice"><i class="fas fa-hand-rock fa-8x rotated-180 size"></i></div>
+            <div class="playerChoice board" id="playerchoice"><i class="fas fa-8x fa-hand-scissors size"></i></div>
+        </div>
+        <div id="playerOptions">
+            <button id="rockbtn">
+                <span id="rock" class="option"><i class="fas fa-hand-rock fa-2x rotated-180"></i></span>
+            </button>
+            <button id="paperbtn">
+                <span id="paper" class="option"><i class="fas fa-hand-paper fa-2x"></i></span>
+            </button>
+            <button id="scissorbtn">
+                <span id="scissors" class="option"><i class="fas fa-hand-scissors fa-2x"></i></span>
+            </button>
+        </div>
+    </div>
+    <!-- <button class="start" onclick="startGame()">Start</button> -->
+    <button class="start" onclick="restart()">Retart</button>
+    <!-- <br><br> -->
+    <footer>
+        &copy;RPC 2024<br>
+        <small><i class="fas fa-gamepad"></i> developed by victor</small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
