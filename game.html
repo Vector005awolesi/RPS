@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK-PAPER-SCISSORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.css">
+</head>
+
+<body>
+    <button  id="log-btn">Log</button>
+ 
+    <div id="log">
+        <p id="total_log">Wins and rounds</p>
+        <li id="Rounds_log" class="log">Round: 0</li>
+        <li id="player_log" class="log">Nothing yet</li>
+        <li id="computer_log" class="log">Nothing yet</li>
+        <p id="result-log"></p>
+    </div>
+    <div id="playerScore">
+        <span class="back-arrow" onclick="leaveGame()">
+            <span  style="cursor: pointer;"><i class="fas fa-arrow-left fa-2x"></i></span>
+        </span>
+        <h2 class="cap-fade-up-fast">RPS</h2>
+        <h4 class="cursive-text">Scores</h4>
+        <div id="player1Score" class="player-score">Computer: 0</div>
+        <div id="player2Score" class="player-score">Player: 0</div>
+    </div>
+    <div class="margin">
+        <h2 id="results"></h2>
+    </div>
+    <div id="exitPopUp">
+        <p>Are you sure you want to leave the game all progress will be lost</p>
+        <button id="exitGame" style="background-color: rgb(201, 12, 12);">Yes</button>
+         <button id="stayInGame">No</button>
+  </div>
+    <div class="game">
+        <div class="playBoard">
+            <div class="aichoice board" id="aichoice"><i class="fas fa-hand-rock fa-8x rotated-180 size"></i></div>
+            <div class="playerChoice board" id="playerchoice"><i class="fas fa-8x fa-hand-scissors size"></i></div>
+        </div>
+        <div id="playerOptions">
+            <div>
+                <button id="rockbtn">
+                    <span id="rock" class="option"><i class="fas fa-hand-rock fa-2x rotated-180"></i></span>
+                </button>
+                <small>Rock</small>
+            </div>
+            <div>
+                <button id="paperbtn">
+                    <span id="paper" class="option"><i class="fas fa-hand-paper fa-2x"></i></span>
+                </button>
+                <small>Paper</small>
+            </div>
+            <div>
+                <button id="scissorbtn">
+                    <span id="scissors" class="option"><i class="fas fa-hand-scissors fa-2x"></i></span>
+                </button>
+                <small>Scissors</small>
+            </div>
+        </div>
+    </div>
+    <!-- <button class="start" onclick="startGame()">Start</button> -->
+    <button class="start" onclick="restart()">Restart</button>
+    <!-- <br><br> -->
+
+    <script src="script.js"></script>
+    <script src="icons.js"></script>
+</body>
+
+</html>

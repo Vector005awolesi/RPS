@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock paper scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="icons.css">
+</head>
+
+<body>
+  <br>
+  <h1 class="game-header">RPS</h1>
+  <small class="fade-menu">Menu</small>
+  <div class="design-before"><i class="fas fa-hand-rock large-icon home-icon"></i></div>
+  <div class="design-after"><i class="fas fa-hand-scissors large-icon home-icon-1"></i></div>
+  <div class="start-menu">
+
+    <div><button class="menu-btn" onclick="playGame()" style="animation: fade-up 500ms ease forwards 1 running"><i
+          class="fas fa-play "></i> Play game</button></div>
+    <div><a href="how-to-play.html"><button class="menu-btn" style="animation: fade-up 800ms ease forwards 1 running"><i
+            class="fas fa-question"></i> How to Play</button></a>
+    </div>
+    <div><a href=""><button class="menu-btn" style=" animation: fade-up 1.1s ease forwards 1 running"><i
+            class="fas fa-download"></i> Download</button></a></div>
+    <div><a href=""><button class="menu-btn" style=" animation: fade-up 1.5s ease forwards 1 running"><i
+            class="fas fa-gamepad"></i> Other games</button></a></div>
+  </div>
+  <footer>
+    &copy;RPC 2024<br>
+    <small><i class="fas fa-gamepad"></i> developed by victor</small>
+  </footer>
+  <script src="icons.js"></script>
+  <script>
+    function playGame() {
+      window.location.href = "game.html"
+    }
+  </script>
+</body>
+
+</html>
